@@ -1,5 +1,5 @@
-use rand::Rng;
 use rand::seq::IndexedRandom;
+use rand::Rng;
 
 #[derive(Debug)]
 struct Point {
@@ -26,10 +26,10 @@ fn main() {
     println!("{:?}", passwd);
     let passwd = gen_str();
     println!("{:?}", passwd);
-		let a = vec!["a","b","c"];
-		let b = &a[0..2];
-		let c = &a[2..];
-		println!("a={:?},b={:?}",b, c);
+    let a = vec!["a", "b", "c"];
+    let b = &a[0..2];
+    let c = &a[2..];
+    println!("a={:?},b={:?}", b, c);
 
     let _s1 = String::from("abcd");
 
@@ -38,7 +38,7 @@ fn main() {
     //         let s2<'a> = String::from("xyz");
     //     result = logest(s1.as_str(), s2.as_str());
     // }
-    
+
     // println!("{:?}", result);
     get_random();
 }
@@ -59,7 +59,7 @@ fn gen_str() -> String {
     password
 }
 
-fn logest<'a>(x: &'a str, y: &'a str) ->&'a str {
+fn logest<'a>(x: &'a str, y: &'a str) -> &'a str {
     if x.len() > y.len() {
         x
     } else {
@@ -67,9 +67,9 @@ fn logest<'a>(x: &'a str, y: &'a str) ->&'a str {
     }
 }
 
-fn get_random(){
+fn get_random() {
     let mut rg = rand::rng();
-    let chars = vec!['a','c','e','r','t','y','q'];
+    let chars = vec!['a', 'c', 'e', 'r', 't', 'y', 'q'];
     let res = chars.choose(&mut rg).unwrap();
-    println!("res={:?}",res);
+    println!("res={:?}", res);
 }

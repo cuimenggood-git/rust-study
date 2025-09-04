@@ -8,31 +8,30 @@
 fn main() {
     let s1 = String::from("hello world");
     let s2 = s1.clone();
-    println!("s1={}",s2);//
-    println!("s1={}",s1);//
+    println!("s1={}", s2); //
+    println!("s1={}", s1); //
     let a = 5;
-    let b:u32 = 12;
-    let c = a+b; // 强转为 u32
-    // for_range();
-    // println!("a is {},b={}c={c}",a, b);
-    // let scert_number:i64 = rand::thread_rng().gen_range(0..101);
-    // println!("scert_number={scert_number}");
-    // loop {
-    //     let mut guss = String::new();
-    //     println!("please input a numbe: ");        
-    //     std::io::stdin().read_line(&mut guss).expect("please input a number");
-    //     let guss :i64 = guss.trim().parse().expect("please type a number!");
-    //     match guss.cmp(&scert_number) {
-    //         std::cmp::Ordering::Equal =>{
-    //             println!("equal, then exit");
-    //             break
-    //         },
-    //         std::cmp::Ordering::Greater =>println!("greater"),
-    //         std::cmp::Ordering::Less =>println!("less"),
-    //     }
-    // }
-    // prost_build::Config::new().out_dir("src/pb").compile_protos(&["abi.proto"],&["./api"]).unwrap();
-
+    let b: u32 = 12;
+    let c = a + b; // 强转为 u32
+                   // for_range();
+                   // println!("a is {},b={}c={c}",a, b);
+                   // let scert_number:i64 = rand::thread_rng().gen_range(0..101);
+                   // println!("scert_number={scert_number}");
+                   // loop {
+                   //     let mut guss = String::new();
+                   //     println!("please input a numbe: ");
+                   //     std::io::stdin().read_line(&mut guss).expect("please input a number");
+                   //     let guss :i64 = guss.trim().parse().expect("please type a number!");
+                   //     match guss.cmp(&scert_number) {
+                   //         std::cmp::Ordering::Equal =>{
+                   //             println!("equal, then exit");
+                   //             break
+                   //         },
+                   //         std::cmp::Ordering::Greater =>println!("greater"),
+                   //         std::cmp::Ordering::Less =>println!("less"),
+                   //     }
+                   // }
+                   // prost_build::Config::new().out_dir("src/pb").compile_protos(&["abi.proto"],&["./api"]).unwrap();
 }
 
 // impl ImageSpec {
